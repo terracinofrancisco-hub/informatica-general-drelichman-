@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casey Reas — Arte Generativo</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: url('fondo.png') center/cover fixed no-repeat;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.75);
+      min-height: 100vh;
+      width: 100%;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 80px 10%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .content {
+      max-width: 1200px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .text-box {
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(6px);
+      padding: 35px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.8;
+      margin-bottom: 18px;
+      color: rgba(255,255,255,0.92);
+    }
+
+    blockquote {
+      font-size: 1.2rem;
+      font-style: italic;
+      margin-bottom: 25px;
+      border-left: 4px solid white;
+      padding-left: 15px;
+      color: rgba(255,255,255,0.9);
+    }
+
+    ul {
+      margin-top: 20px;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    .image-box img {
+      width: 100%;
+      border-radius: 20px;
+      object-fit: cover;
+      box-shadow: 0 0 25px rgba(0,0,0,0.5);
+    }
+
+    @media(max-width: 900px) {
+      .content {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      h2 {
+        font-size: 1.7rem;
+      }
+
+      section {
+        padding: 60px 7%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="overlay">
+
+    <!-- PARTE 1 -->
+    <section>
+      <div class="content">
+
+        <div class="text-box">
+          <h1>Casey Reas</h1>
+
+          <blockquote>
+            “Una obra puede ser definida como un sistema y ejecutada en múltiples formas.”
+          </blockquote>
+
+          <h2>Arte generativo y pensamiento computacional</h2>
+
+          <p>
+            Casey Reas es un artista, programador y educador reconocido por su trabajo en el desarrollo del arte generativo. Su práctica se basa en la creación de sistemas que, a partir de reglas definidas, producen imágenes y comportamientos visuales autónomos.
+          </p>
+
+          <p>
+            Su trabajo se centra en la relación entre instrucciones, ejecución y resultado. A través del uso del código, construye estructuras que permiten explorar variaciones infinitas dentro de un mismo sistema.
+          </p>
+
+          <p>
+            Además de su producción artística, ha tenido un rol clave en la difusión del pensamiento computacional dentro del arte contemporáneo.
+          </p>
+        </div>
+
+        <div class="image-box">
+          <img src="reas-1.jpg" alt="Casey Reas" />
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- PARTE 2 -->
+    <section>
+      <div class="content">
+
+        <div class="image-box">
+          <img src="reas-2.jpg" alt="Arte generativo" />
+        </div>
+
+        <div class="text-box">
+          <h2>Trayectoria y contribuciones</h2>
+
+          <p>
+            Nacido en Estados Unidos, Casey Reas desarrolló su formación en diseño y medios digitales, consolidando una carrera que combina investigación, producción artística y docencia.
+          </p>
+
+          <p>
+            Es ampliamente conocido por ser co-creador del lenguaje de programación Processing, junto a Ben Fry, una herramienta fundamental para artistas y diseñadores que trabajan con código.
+          </p>
+
+          <p>
+            A lo largo de su trayectoria, su obra ha sido exhibida en museos, galerías y festivales internacionales.
+          </p>
+
+          <h2>Obras y conceptos clave</h2>
+
+          <ul>
+            <li>Software Structures</li>
+            <li>Process</li>
+            <li>Generative Systems</li>
+            <li>Emergencia</li>
+            <li>Arte basado en reglas</li>
+            <li>Visualización algorítmica</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- PARTE 3 -->
+    <section>
+      <div class="content">
+
+        <div class="text-box">
+          <h2>El código como sistema visual</h2>
+
+          <p>
+            El enfoque de Casey Reas se basa en la creación de instrucciones que definen comportamientos visuales. En lugar de diseñar una imagen de forma directa, desarrolla algoritmos que determinan cómo los elementos se relacionan, se mueven y evolucionan en el tiempo.
+          </p>
+
+          <p>
+            A partir de reglas simples, sus sistemas pueden generar resultados complejos e impredecibles. Esta lógica permite explorar la emergencia, donde patrones y formas surgen de la interacción entre componentes.
+          </p>
+
+          <h2>Sistemas, reglas y variación</h2>
+
+          <p>
+            El trabajo de Casey Reas se fundamenta en la idea de que una obra puede ser entendida como un sistema de reglas. Cada vez que el sistema se ejecuta, puede producir un resultado diferente.
+          </p>
+
+          <h2>Influencia en el arte contemporáneo</h2>
+
+          <p>
+            La obra de Casey Reas ha tenido un impacto significativo en el desarrollo del arte digital y generativo, legitimando el uso del código como un medio artístico contemporáneo.
+          </p>
+        </div>
+
+        <div class="image-box">
+          <img src="reas-3.jpg" alt="Código y arte" />
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+</body>
+</html>
